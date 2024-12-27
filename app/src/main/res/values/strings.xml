@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Layout_AddToCart_Chekout</string>
+    <string name="back"><![CDATA[<]]></string>
+    <string name="my_cart">My Cart</string>
+    <string name="minus">-</string>
+    <string name="shop">Shop</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="favorites">Favorites</string>
+    <string name="profile">Profile</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="group_4">Group 4</string>
+    <string name="cart">Cart</string>
+</resources>

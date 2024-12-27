@@ -1,0 +1,32 @@
+{
+  "Items": [
+    {
+      "title": "Pink singlet",
+      "description": "This light and airy pink shirt is perfect for warm weather. Made from 100% cotton, it's breathable and comfortable to wear. It features a classic button-down collar and a relaxed fit.",
+      "price": 35,
+      "rating": 4.6,
+      "picRes": "shoes1"
+    },
+    {
+      "title": "Jean Coat",
+      "description": "This light and airy pink shirt is perfect for warm weather. Made from 100% cotton, it's breathable and comfortable to wear. It features a classic button-down collar and a relaxed fit.",
+      "price": 55,
+      "rating": 4.1,
+      "picRes": "shoes2"
+    },
+    {
+      "title": "Orange Knit Sweater",
+      "description": "This cozy orange cable knit sweater is perfect for winter weather. Made from 100% wool, it's warm and stylish. It features a classic crewneck collar and a relaxed fit.",
+      "price": 75,
+      "rating": 4.5,
+      "picRes": "shoes3"
+    },
+    {
+      "title": "Plaid shirt",
+      "description": "This stylish red and black plaid shirt is perfect for any occasion. Made from a soft cotton blend, it's comfortable to wear. It features a classic button-down collar and a relaxed fit.",
+      "price": 40,
+      "rating": 4.2,
+      "picRes": "shoes4"
+    }
+  ]
+}

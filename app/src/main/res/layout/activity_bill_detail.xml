@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9F9F9"
+    tools:context=".BillDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/tvBillTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết hóa đơn"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/purple_bg"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CardView: Thông tin khách hàng -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvCustomerName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Họ và tên: Nguyễn Văn A"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại: 0123456789"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ: 123 Đường ABC, TP HCM"
+                    android:textSize="16sp"
+                    android:textColor="#333333" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView: Danh sách sản phẩm -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvProductsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sách sản phẩm"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#347DBD"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Sản phẩm 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <!-- Hình ảnh sản phẩm -->
+                    <ImageView
+                        android:id="@+id/ivProduct1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/shoes1"
+                        android:scaleType="centerCrop"
+                        android:background="#EEEEEE"
+                        android:layout_marginEnd="12dp"
+                        android:elevation="2dp" />
+
+                    <!-- Thông tin sản phẩm -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical">
+
+                        <!-- Tên sản phẩm -->
+                        <TextView
+                            android:id="@+id/tvProductName1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sản phẩm: Sneaker"
+                            android:textSize="16sp"
+                            android:textColor="#333333"
+                            android:layout_marginBottom="4dp" />
+
+                        <!-- Giá sản phẩm -->
+                        <TextView
+                            android:id="@+id/tvProductPrice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Giá: $"
+                            android:textSize="14sp"
+                            android:textColor="#FF6200EE"
+                            android:layout_marginBottom="4dp" />
+
+                        <!-- Số lượng -->
+                        <TextView
+                            android:id="@+id/tvProductQuantity1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Số lượng: 2"
+                            android:textSize="14sp"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tổng tiền -->
+        <TextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền: $"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:textColor="#FF6200EE"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Phương thức thanh toán -->
+        <TextView
+            android:id="@+id/tvPaymentMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phương thức thanh toán: Thẻ ngân hàng"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Nút quay lại -->
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quay lại"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/purple"
+            android:textColor="#FFFFFF"
+            android:elevation="4dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>

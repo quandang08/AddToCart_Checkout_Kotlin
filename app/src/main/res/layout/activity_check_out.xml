@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOutActivity">
+    <!-- Tiêu đề thông báo -->
+    <ImageView
+        android:id="@+id/successImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="168dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_check" />
+
+    <TextView
+        android:id="@+id/paymentStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:text="Payment Successful!"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/successImageView" />
+
+    <!-- Số đơn hàng -->
+
+    <!-- Nút xác nhận -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/blue_button_bg"
+        android:text="Continue buy item"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/estimatedTimeLabelTextView" />
+
+    <TextView
+        android:id="@+id/orderNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="24588164"
+        android:textColor="#61D2BC"
+        app:layout_constraintBottom_toBottomOf="@+id/orderNumberLabelTextView"
+        app:layout_constraintStart_toEndOf="@id/orderNumberLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/orderNumberLabelTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/estimatedTimeLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:text="Estimated time..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemDetailsTextView" />
+
+    <TextView
+        android:id="@+id/itemDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="details my"
+        android:textColor="#347DBD"
+        app:layout_constraintBottom_toBottomOf="@+id/itemDetailsLabelTextView"
+        app:layout_constraintStart_toEndOf="@id/itemDetailsLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/itemDetailsLabelTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/orderNumberLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="112dp"
+        android:text="Your order number: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/paymentStatusTextView" />
+
+    <TextView
+        android:id="@+id/itemDetailsLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Items that can view your details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orderNumberTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
